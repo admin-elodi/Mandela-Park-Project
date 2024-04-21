@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this page showcases the sports facilities and activities of the park">
+    <meta name="keywords" content="sports, diversity, nature, Amsterdam, recreation">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Sports</title>
+    <link rel="icon" href="img/parklogo.jpg">
+  </head>
+<body>
+  <header>
+    <nav class="flex justify-between items-center w-full">
+      <h4>
+        <a class="logo flex flex-col" href="index.html">
+          <img src="img/parklogo.jpg" alt="Logo" title="logo of Nelson Mandela Park">
+          <strong class="nav-title">NELSON MANDELA PARK</strong>
+        </a>
+      </h4>
+      <ul class="nav-links">
+        <li>
+          <a
+            href="javascript:void(0)"
+            onclick="closeSideBar()"
+            class="d-md-none d-block"
+            >Close</a
+          >
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="rental.html">Rental</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li class="last-link"><a href="contact.html">contact</a></li>
+      </ul>
+      <h4 class="d-md-none d-block">
+        <a href="javascript:void(0)" onclick="openSideBar()">
+          <img src="img/menu.png" alt="road into the park" title="roads leading into Nelson Mandela Park">
+        </a>
+      </h4>
+    </nav>
+  </header>
+  <main>
+    <span class="green-bar-top"></span>
+    <aside class="bg-sport flex items-center">
+      <section>
+        <h1 class="ml-2 text-xl text-white">SPORT</h1>
+        <ul class="breadcrumbs ml-2">
+          <li class="text-white">Home</li>
+          <li class="text-white">Sports</li>
+        </ul>
+      </section>
+    </aside>
+    <section class="w-full mt-2">
+      <h1 class="title text-center line-1 mb-2">Sports in Nelson Mandela Park</h1>
+      <article class="grid grid-col-3">
+        <p class="text-md-2 p-4 pt-0">
+          In 2014,Amsterdam Zuid Oost decided to pay a tribute to Nelson
+          Mandela by renaming the park originally built in 1969 after him.
+          Extensive renovations were carried out to rejuvenate the park.
+          Unveiling our comprehensive range of sport activities within this
+          park, offering you the chance to explore its beauty.
+        </p>
+        <p class="text-md-2 p-4 pt-0">
+          We ensure that the recreational and athletic amenities within this
+          lush green park is impeccably maintained, fully equipped, and easily
+          accessible to all. Our commitment extends to offering top-notch
+          sports programs and fostering a warm, inclusive social atmosphere
+          for the Athletes we serve.
+        </p>
+      </article>
+    </section>
+    <section class="green-bar flex justify-center items-center">
+      <h4 class="text-white text-md">
+        We are Nelson Mandela Park! We love to play in Nature's Playground.
+      </h4>
+    </section>
+    <section class="mt-2">
+      <h1 class="title line-1 mb-2 ml-3">Our Mission and Values</h1>
+      <figure class="p-3 bg-md-cream grid grid-col-3 gap-2 place-items-center">
+        <figure class="d-md-block d-none">
+          <img src="img/runner.jpg" alt="Image" class="w-full" title="a female track and field athlete">
+        </figure>
+        <aside>
+          <h1 class="mb-2">Warm & Enjoyable Atmosphere</h1>
+          <p class="text-lg mb-3">
+            We welcome everyone with cheerful smiles, offering guidance and ensuring a lively, secure and sociable setting for you to indulge in sports activities.
+          </p>
+          <img src="img/runner.jpg" alt="Image" class="w-full d-md-none d-block" title="female athlete">
+        </aside>
+      </figure>
+    </section>
+    <figure class="mt-2 p-3 grid grid-col-3 gap-2 place-items-center">
+      <aside>
+        <h2>Promoting Inclusivity & Diversity</h2>
+        <p class="text-lg mb-3 mt-2">
+          We prioritize equal treatment for all,without exceptions. Our
+          facilities are open to Athletes from diverse backgrounds and
+          experiences.Our customer base reflects this in order to ensure a
+          happy and healthy wellbeing for you.
+        </p>
+      </aside>
+      <figure>
+        <img src="img/instructor.jpg" alt="Image" class="w-full" title="tennis instructor and students">
+      </figure>
+    </figure>
+  </main>
+  <footer class="bg-black p-2">
+    <p class="text-md-2">
+      &copy; Nelson Mandela Park 2023 All Rights Reserved
+    </p>
+    <ul class="footer-list">
+      <li class="flex mb-05">
+        <img src="img/mail.png" alt="mail" class="mr-1" title="envelop icon">
+        <span>NelsonMandelaP@email.com</span>
+      </li>
+      <li class="flex">
+        <img src="img/phone.png" alt="phone" class="mr-1" title="phone handle icon">
+        <span>0653735378</span>
+      </li>
+    </ul>
+  </footer>
+  <script>
+    function openSideBar() {
+      document.getElementsByClassName("nav-links")[0].style.width = "250px";
+    }
+
+    function closeSideBar() {
+      document.getElementsByClassName("nav-links")[0].style.width = "0px";
+    }
+  </script>
+</body>
+</html>

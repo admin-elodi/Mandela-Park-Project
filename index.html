@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Kosisochukwu Ozougwu">
+    <meta name="keywords" content="Nelson, Mandela, skateboard, fitness, athlete">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <title>Home</title>
+    <link rel="icon" href="img/parklogo.jpg">
+  </head>
+<body>
+<header>
+  <nav class="flex justify-between items-center w-full">
+    <h4>
+      <a class="logo flex flex-col" href="index.html">
+        <img src="img/parklogo.jpg"  alt="Logo" title="Nelson Mandela Park logo">
+        <span class="nav-title">NELSON MANDELA PARK</span>
+      </a>
+    </h4>
+    <ul class="nav-links">
+      <li>
+        <a
+          href="javascript:void(0)"
+          onclick="closeSideBar()"
+          class="d-md-none d-block"
+          >Close</a
+        >
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="rental.html">Rental</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li class="last-link"><a href="contact.html">contact</a></li>
+    </ul>
+    <h4 class="d-md-none d-block">
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <img src="img/menu.png" alt="Logo" title="picture of hamburger menu">
+      </a>
+    </h4>
+  </nav>
+</header>
+<main>
+  <span class="green-bar-top"></span>
+  <section class="bg-home flex items-center">
+    <h1 class="p-2 text-xl text-white">HOME</h1>
+  </section>
+  <article class="w-full mt-2">
+    <h2 class="title text-center line-1">Welcome</h2>
+    <p class="text-md-2 p-4 pt-0">
+      We are Nelson Mandela Park, where nature meets athleticism and passion
+      knows no bounds. We help athletes, especially those who find their
+      strength, joy, and purpose in the heart of nature. We celebrate the
+      spirit of sportsmanship under the open sky, offering varieties of
+      options for athletes who seek the perfect backdrop for their
+      activities.
+    </p>
+    <a href="./sports.html" class="btn ml-3"> FIND OUT MORE </a>
+  </article>
+  <section class="mt-2 p-3">
+  <h1 class="title line-1">Explore</h1>
+    <figure class="grid grid-col-3 gap-2">
+      <figure class="text-center">
+        <img src="img/basketballcourt.jpg" alt="Image" class="w-full" height="220px" title="basketball hoop">
+        <p class="mb-3 mt-2">Basket Ball</p>
+        <a href="./activities.html" class="btn"> FIND OUT MORE </a>
+      </figure>
+      <figure class="text-center">
+        <img src="img/skatinghomepage.jpg" alt="Image" class="w-full" title="skateboarding pit with grafitti">
+        <p class="mb-3 mt-2">Skating</p>
+        <a href="./activities.html" class="btn ml-3"> FIND OUT MORE </a>
+      </figure>
+      <figure class="text-center">
+        <img src="img/fitnesscourt2.jpg" alt="Image" class="w-full" title="fitness structure">
+        <figcaption>
+          <p class="mb-3 mt-2">Fitness</p>
+          <a href="./activities.html" class="btn"> FIND OUT MORE </a>
+        </figcaption>
+      </figure>
+    </figure>
+  </section>
+  <section class="mt-2 p-3">
+    <h1 class="title line-1">Featured</h1>
+    <figure class="grid grid-col-3 gap-2 place-items-center">
+      <figure>
+        <img src="img/skatehomepage.jpg" alt="Image" class="w-full" title="skateboarding pit">
+      </figure>
+      <aside>
+        <p class="text-lg mb-3">
+          At our sports park, we offer two arrays for the rental options,
+          catering to athletes of all levels and interests. Whether you're a
+          basketball enthusiast, a skating pro, or a fitness junkie, we have
+          the perfect gear and spaces for you
+        </p>
+        <a href="./rental.html" class="btn decoration-none"> FIND OUT MORE </a>
+      </aside>
+    </figure>
+  </section>
+  <figure class="relative p-3">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9757.190974367337!2d4.9924296!3d52.3105995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60c42dc73af47%3A0xeafb0810536ac34e!2sGaasperpark!5e0!3m2!1sen!2sng!4v1698416253632!5m2!1sen!2sng"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="relative map"
+    ></iframe>
+    <a href="./location.html" class="btn absolute map-button"> FIND OUT MORE </a>
+  </figure>
+</main>
+<footer class="bg-black p-2">
+  <p class="text-md-2">
+    &copy; Nelson Mandela Park 2023 All Rights Reserved
+  </p>
+  <ul class="footer-list">
+    <li class="flex mb-05">
+      <img src="img/mail.png" alt="mail" class="mr-1" title="envelop icon">
+      <span>NelsonMandelaP@email.com</span>
+    </li>
+    <li class="flex">
+      <img src="img/phone.png" alt="phone" class="mr-1" title="phone handle icon">
+      <span>0653735378</span>
+    </li>
+  </ul>
+</footer>
+<script>
+  function openSideBar() {
+    document.getElementsByClassName("nav-links")[0].style.width = "250px";
+  }
+
+  function closeSideBar() {
+    document.getElementsByClassName("nav-links")[0].style.width = "0px";
+  }
+</script>
+</body>
+</html>
+

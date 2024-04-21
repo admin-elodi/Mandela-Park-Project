@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <title>Location</title>
+    <link rel="icon" href="img/parklogo.jpg">
+  </head>
+<body>
+<header>
+  <nav class="flex justify-between items-center w-full">
+    <h4>
+      <a class="logo flex flex-col" href="index.html">
+        <img src="img/parklogo.jpg" title="logo of Nelson Mandela Park"  alt="Logo" >
+        <strong class="nav-title">NELSON MANDELA PARK</strong>
+      </a>
+    </h4>
+    <ul class="nav-links">
+      <li>
+        <a
+          href="javascript:void(0)"
+          onclick="closeSideBar()"
+          class="d-md-none d-block"
+          >Close</a
+        >
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="rental.html">Rental</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li class="last-link"><a href="contact.html">contact</a></li>
+    </ul>
+    <h4 class="d-md-none d-block">
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <img src="img/menu.png"  alt="Logo" title="image of hamburger menu">
+      </a>
+    </h4>
+  </nav>
+</header>
+<main>
+  <span class="green-bar-top"></span>
+      <aside class="bg-location flex items-center">
+        <section>
+          <h1 class="ml-2 text-xl text-white">LOCATION</h1>
+          <ul class="breadcrumbs ml-2">
+            <li class="text-white">Home</li>
+            <li class="text-white">Location</li>
+          </ul>
+        </section>
+      </aside>
+      <article class="w-full mt-2">
+        <h2 class="title text-center line-1">Location</h2>
+        <p class="text-md-2 p-4 pt-0 pb-0">
+          Located in Reigersbospad, Nelson Mandela Park is conveniently less
+          than a 30 minutes walk from Bijlmerdreef in Amsterdam Zuid Oost.
+         <br>Ample parking, public transport links and bike-friendly routes making
+          reaching us hassle-free.
+          <br> Excited!....Join us and experience the thrill of sports, and the beauty of nature, all in one. 
+           
+        </p>   
+        <p class="text-md-2 p-4 pt-0 pb-0 text-center">Come play, connect and celebrate the spirit of athleticism with us.</p>
+      </article>
+      <figure class="p-3 bg-md-cream grid grid-col-3 gap-2 place-items-center">
+        <aside>
+          <p class="text-lg mb-3 ml-3">Reigersbospad, Amsterdam</p>
+          <p class="text-lg mb-3 flex flex-row items-center">
+            <img src="img/map-pin.png" alt="map pin" title="icon of map">
+            <a href="https://maps.app.goo.gl/db3RhhXsFErMstg4A" target="_blank">https://maps.app.goo.gl/db3RhhXsFErMstg4A</a>
+          </p>
+        </aside>
+        <figure class="w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.2282169000923!2d4.962848000000001!3d52.3118612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b88628a4071%3A0x52115eaa963eb30a!2sReigersbospad%2C%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2sng!4v1698421948047!5m2!1sen!2sng"
+            class="map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>  Map of Nelson Mandela Park</p>
+        </figure>
+      </figure>
+    </main>
+    <footer class="bg-black p-2">
+      <p class="text-md-2">
+        &copy; Nelson Mandela Park 2023 All Rights Reserved
+      </p>
+      <ul class="footer-list">
+        <li class="flex mb-05">
+          <img src="img/mail.png" alt="mail" class="mr-1" >
+          <span>NelsonMandelaP@email.com</span>
+        </li>
+        <li class="flex">
+          <img src="img/phone.png" alt="phone" class="mr-1" >
+          <span>0653735378</span>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      function openSideBar() {
+        document.getElementsByClassName("nav-links")[0].style.width = "250px";
+      }
+
+      function closeSideBar() {
+        document.getElementsByClassName("nav-links")[0].style.width = "0px";
+      }
+    </script>
+  </body>
+</html>   

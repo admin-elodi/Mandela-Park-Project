@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <title>Activities</title>
+    <link rel="icon" href="img/parklogo.jpg">
+  </head>
+<body>
+<header>
+  <nav class="flex justify-between items-center w-full">
+    <h4>
+      <a class="logo flex flex-col" href="index.html">
+        <img src="img/parklogo.jpg"  alt="Logo" title="Nelson Mandela Park logo">
+        <strong class="nav-title">NELSON MANDELA PARK</strong>
+      </a>
+    </h4>
+    <ul class="nav-links">
+      <li>
+        <a
+          href="javascript:void(0)"
+          onclick="closeSideBar()"
+          class="d-md-none d-block"
+          >Close</a
+        >
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="rental.html">Rental</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li class="last-link"><a href="contact.html">contact</a></li>
+    </ul>
+    <h4 class="d-md-none d-block">
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <img src="img/menu.png"  alt="Logo" >
+      </a>
+    </h4>
+  </nav>
+</header>
+<main>
+  <span class="green-bar-top"></span>
+      <aside class="bg-activities flex items-center">
+        <section>
+          <h2 class="ml-2 text-xl text-white">ACTIVITIES</h2>
+          <ul class="breadcrumbs ml-2">
+            <li class="text-white">Home</li>
+            <li class="text-white">Activities</li>
+          </ul>
+        </section>
+      </aside>
+      <section class="w-full mt-2">
+        <h2 class="title text-center line-1">UnbelievaBall Activities!</h2>
+        <p class="text-md-2 p-4 pt-0">
+          Sporting activities ranging from Basketball ,Skating, Soccer and
+          Fitness. Come in and engage in friendly matches, practise your skills
+          or simply enjoy your physical outdoor activity.
+        </p>
+      </section>
+      <figure class="grid grid-col-3 gap-2 place-items-center p-3 bg-md-cream">
+        <article>
+          <h2 class="text-lg">BasketBall</h2>
+          <p class="text-lg mb-3">
+            The fast-paced nature of Basketball can generate excitement and
+            adrenaline. Dribbling, shooting and scoring can be thrilling
+            especially in our park. <br ><br >
+            if you want to experience such, you can contact us by completing
+            the <a href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/Contactformulier.aspx/Contactformulier">form</a>.
+          </p>
+        </article>
+        <figure>
+          <img src="img/bbactivitiespage.jpg" alt="Image" class="w-full" title="basketball court">
+          <figcaption>Basketball court</figcaption>
+        </figure>
+      </figure>
+      <figure class="mt-2 p-3 grid grid-col-3 gap-2 place-items-center">
+        <figure class="d-md-block d-none">
+          <img src="img/skatingactivitypage.jpg" alt="Image" class="w-full" title="skateboarding pits with graffiti">
+          <figcaption>Skating rink</figcaption>
+        </figure>
+        <article>
+          <h2 class="mb-2 text-lg">Skating</h2>
+          <p class="text-lg mb-3">
+            Want to feel a sense of freedom and mobility. Whether gliding on
+            ice, rolling on wheels, or cruising on a skateboard, the thrill of
+            seamless movement can be exhilarating. <br ><br >
+            Fancy Skating, take part in the <a href="https://www.amsterdam.nl/sport/skateparken/alle-skateparken/skatepark-nelson-mandelapark-bijlmer">experience now!</a>.
+          </p>
+        </article>
+        <figure class="d-md-none d-block">
+          <img src="img/skatingactivitypage.jpg" alt="Image" class="w-full" title="skateboard pit">
+          <figcaption>Skating rink</figcaption>
+        </figure>
+      </figure>
+      <figure class="p-3 bg-md-cream grid grid-col-3 gap-2 place-items-center">
+        <article>
+          <h1 class="text-lg">Fitness</h1>
+          <p class="text-lg mb-3">
+            These facilities have been put in place to give our users the
+            opportunity to engage in body building and outdoor fitness
+            activities.
+          </p>
+        </article>
+        <figure>
+          <img src="img/fitnesscourt2.jpg" alt="Image" class="w-full" title="fitness structure">
+          <figcaption>Fitness Kit</figcaption>
+        </figure>
+      </figure>
+    </main>
+    <footer class="bg-black p-2">
+      <p class="text-md-2">
+        &copy; Nelson Mandela Park 2023 All Rights Reserved
+      </p>
+      <ul class="footer-list">
+        <li class="flex mb-05">
+          <img src="img/mail.png" alt="mail" class="mr-1" title="envelop icon">
+          <span>NelsonMandelaP@email.com</span>
+        </li>
+        <li class="flex">
+          <img src="img/phone.png" alt="phone" class="mr-1" title="phone handle icon">
+          <span>0653735378</span>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      function openSideBar() {
+        document.getElementsByClassName("nav-links")[0].style.width = "250px";
+      }
+
+      function closeSideBar() {
+        document.getElementsByClassName("nav-links")[0].style.width = "0px";
+      }
+    </script>
+  </body>
+</html>
